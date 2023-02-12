@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Enter Infix Expression</title>
+	<style>
+		body {
+			background-color: lightgray;
+			font-family: Arial, sans-serif;
+		}
+		
+		form {
+			width: 500px;
+			margin: 50px auto;
+			padding: 20px;
+			border: 1px solid gray;
+			border-radius: 5px;
+			background-color: white;
+			box-shadow: 0px 0px 10px gray;
+			text-align: center;
+		}
+		
+		label {
+			display: block;
+			margin-bottom: 10px;
+			font-weight: bold;
+			color: gray;
+		}
+		
+		input[type="text"] {
+			width: 100%;
+			padding: 5px;
+			font-size: 1.2em;
+			margin-bottom: 20px;
+			border-radius: 5px;
+			border: 1px solid gray;
+		}
+		
+		.submit-buttons {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 20px;
+		}
+		
+		input[type="submit"] {
+			width: 45%;
+			padding: 10px;
+			font-size: 1.2em;
+			background-color: lightblue;
+			border-radius: 5px;
+			border: none;
+			cursor: pointer;
+			transition: all 0.2s ease-in-out;
+		}
+		
+		input[type="submit"]:hover {
+			background-color: blue;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<form action="" method="post">
+		<h2>Enter Infix Expression</h2>
+		<br>
+		<input type="text" id="expression" name="expression"> <br> <br>
+		<div class="submit-buttons">
+			<input type="submit" value="Prefix" name="submit" formaction="submitPrefix">
+			<input type="submit" value="Postfix" name="submit" formaction="submitPostfix">
+		</div>
+	</form>
+</body>
+</html>
