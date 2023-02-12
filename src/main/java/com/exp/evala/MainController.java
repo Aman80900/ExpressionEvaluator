@@ -22,10 +22,11 @@ public class MainController {
 		System.out.println("Inside infixToPostFix Method");
 		String expression = req.getParameter("expression");
 		expression = expression.replaceAll("\\s", "");
-		
+		model.addAttribute("Expression", expression);
 		System.out.println("Infix Expression: " + expression);
 		String postFix=InfixToPostfix.infixToPostfix(expression);
 		System.out.println("Postfix Exoression:" + postFix);
+		model.addAttribute("PostFix", "Postfix: ");
 		model.addAttribute("postfixExpression", postFix);
 		return "home";
 		
@@ -37,10 +38,12 @@ public class MainController {
 		System.out.println("Inside infixToPrefix Method");
 		String expression = req.getParameter("expression");
 		expression = expression.replaceAll("\\s", "");
+		model.addAttribute("Expression", expression);
 		
 		System.out.println("Infix Expression: " + expression);
 		String postFix=InfixToPrefix.infixToPrefix(expression);
 		System.out.println("Prefix Exoression:" + postFix);
+		model.addAttribute("PreFix", "Prefix: ");
 		model.addAttribute("prefixExpression", postFix);
 		return "home";
 		
