@@ -3,24 +3,35 @@ Infix to Postfix Converter
 This is a Spring Boot application that converts infix expressions to postfix expressions. The application is built using Java and implements a stack-based algorithm for the conversion process.
 
 Getting Started
+
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 Prerequisites:
+
 Java 8 or higher
 Spring Boot 2.0 or higher
 Maven (for building the project)
 
 
 Installing:
+
 Clone the repository to your local machine:
+
 $ git clone https://github.com/[username]/infix-to-postfix.git
 
+
 Navigate to the project directory and build the project using Maven:
+
+
 $ cd infix-to-postfix
+
 $ mvn clean install
 
+
 Running the Application
+
 Run the following command to start the application:
+
 $ mvn spring-boot:run
 
 
